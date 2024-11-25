@@ -1,21 +1,76 @@
 <!DOCTYPE html>
-<html lang="ru" data-validate="html">
+<html class="page" lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<body class="page__body">
+  <div class="hero" data-test="hero">
+    <div class="container">
+      <header class="hero__header">
+        <div class="hero__box">
+          <div class="hero__wrap-logo">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/logo/logo.svg" type="image/svg+xml" width="130"
+                height="26">
+              <source media="(min-width: 768px)" srcset="img/logo/logo.svg" type="image/svg+xml" width="110"
+                height="22">
+              <img class="hero__img-logo" src="img/logo/logo.svg" width="100" height="20" alt="logo">
+            </picture>
+          </div>
+          <a class="hero__link-tel" href="tel:+88005555555">8 800 555-55-55</a>
+        </div>
+      </header>
+      <section class="hero__wrapper">
+        <div class="hero__wrap">
+          <p class="hero__description"><span class="hero__description-text">Тренажёрный зал</span>
+            <span class="hero__description-text">Групповые&nbsp;занятия</span>
+            <span class="hero__description-text">Кардио-зона</span>
+          </p>
+          <div class="hero__inner">
+            <h1 class="visually-hidden">Фитнес центр Супергум</h1>
+            <p class="hero__desc">Омск</p>
+            <p class="hero__title">Фитнес центр</p>
+            <a class="hero__link hero__link--btn button" href="#">Купить абонемент</a>
+          </div>
+        </div>
+        <div class="hero__box-img">
+          <picture>
+            <source media="(min-width: 1366px)" width="500" height="524" type="image/webp"
+              srcset="img/hero/hero-img-1x-desktop.webp 1x, img/hero/hero-img-2x-desktop.webp 2x">
+            <source media="(min-width:1366px)" width="500" height="524" type="image/jpg"
+              srcset="img/hero/hero-img-1x-desktop.jpg 1x, img/hero/hero-img-2x-desktop.jpg 2x">
+            <source media="(min-width: 768px)" width="324" height="290" type="image/webp"
+              srcset="img/hero/hero-img-tablet.webp 1x, img/hero/hero-img@2x-tablet.webp 2x">
+            <img class="hero__images" src="img/hero/hero-img-tablet.jpg" srcset="img/hero/hero-img@2x-tablet.jpg 2x"
+              width="324" height="290" alt="Мужчина, в футболке с большой буквой S.">
+          </picture>
+
+        </div>
+      </section>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- пример использования спрайта -->
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <!--
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
@@ -26,7 +81,7 @@
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script> -->
   </body>
 
 </html>
